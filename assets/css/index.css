@@ -1,0 +1,23 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #c7c4bd;
+    background-image: url(/assets/img/bg.jpg);
+    background-size: 100%;
+    background-position: top;
+}
+
+main {
+    padding-top: 79px;
+    background-color: rgb(255 255 255 / 40%);
+}
