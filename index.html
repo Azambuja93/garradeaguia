@@ -572,7 +572,29 @@
             </div>
         </section>
 
-        <section id="contato">
+        <section id="encontrar-academia" class="py-5">
+            <p class="fs-1 fw-bold text-center mb-4">
+                Encontre a academia mais próxima
+            </p>
+
+            <div class="row d-flex flex-wrap">
+                <div class="col-12 col-md-3 d-flex flex-column">
+                    <button class="mb-4 btn btn-outline-dark" onclick="map.panTo({lat: -21.7846475, lng: -48.1797056})">
+                        Ponto 1
+                    </button>
+                    <button class="mb-4 btn btn-outline-dark" onclick="map.panTo({lat: -21.7986507, lng: -48.1783277})">
+                        Ponto 2
+                    </button>
+                    <button class="mb-4 btn btn-outline-dark" onclick="map.panTo({lat: -21.7887224, lng: -48.1909447})">
+                        Ponto 3
+                    </button>
+                </div>
+                <div class="col-12 col-md-9">
+                    <div class="ratio ratio-16x9">
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -601,7 +623,18 @@
 
     <!-- Js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- <script>
+        (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+            key: "AIzaSyAtSm7r3pGz_y-gg_vRINTf4Hj9YMzTOBY",
+        });
+    </script> -->
+    <script>
+        (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "beta"});
+    </script>
     <script src="assets/js/index.js"></script>
+
 </body>
 
 </html>
